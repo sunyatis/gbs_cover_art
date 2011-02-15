@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cover Art Demo - Search Results</title>
+  <style type="text/css">
+    table { width: 100%; font-family: sans-serif; }
+    table th {  background-color: gold; }
+    a { color: #40408C; }
+    .gbsthumbnail { height: 80px;}
+    code { color: green; background-color: #ddd; padding: 6px 0 6px 50px; margin-bottom: 2em; font-family: monospace; display: block; }
+  </style>
+</head>
+<body>
+<h1>Cover Art Demo - Search Results</h1>
+  <p>All cover art is being retrieved dynamically from the Google Books data API.</p>
+
+  <hr />
+
+  <table id="records">
+      <th width="80">Cover</th>
+      <th width="20%">Author</th>
+      <th>Title</th>
+      <th width="55">Format</th>
+      <th width="55">Year</th>
+    </tr>
+    <tr>
+      <td align="right"><div bibkey="ISBN:9781848373174 (pbk.)" class="gbookthumbnail"></div></td>
+      <td>Dickens, Charles,</td>
+      <td>A tale of two cities /</td>
+      <td>BK</td>
+      <td>2009</td>
+    </tr>
+    <tr>
+      <td align="right"><div bibkey="ISBN:0230537782" class="gbookthumbnail"></div></td>
+      <td>Jones, Colin.</td>
+      <td>Charles Dickens, a Tale of two cities and the French Revolution /</td>
+      <td>BK</td>
+      <td>2009</td>
+    </tr>
+    <tr>
+      <td align="right"><div bibkey="ISBN:9780393061963 (hardcover)" class="gbookthumbnail"></div></td>
+      <td>Kelly, Christopher,</td>
+      <td>The end of empire :</td>
+      <td>BK</td>
+      <td>2009</td>
+    </tr>
+    <tr>
+      <td align="right"><div bibkey="ISBN:9780313355226 (hard copy : alk. paper)" class="gbookthumbnail"></div></td>
+      <td>Mayer, Matt A.</td>
+      <td>Homeland security and federalism :</td>
+      <td>BK</td>
+      <td>2009</td>
+    </tr>
+    <tr>
+      <td align="right"><div bibkey="ISBN:193469102X (pbk. : alk. paper)" class="gbookthumbnail"></div></td>
+      <td>Arthur M. Sackler Colloquia of the National Academy of Sciences</td>
+      <td>The ancient city :</td>
+      <td>BK</td>
+      <td>2008</td>
+    </tr>
+    <tr>
+      <td align="right"><div bibkey="ISBN:9780763751098 (pbk. : alk. paper)" class="gbookthumbnail"></div></td>
+      <td>De Chesnay, Mary.</td>
+      <td>Caring for the vulnerable :</td>
+      <td>BK</td>
+      <td>2008</td>
+    </tr>
+  </table>
+
+  <hr />
+
+  <h2>Usage</h2>
+  <p>Include the Javascript file.</p>
+  <code>
+      &lt;script type=&quot;text/javascript&quot; src=&quot;https://github.com/sunyolis/gbs_cover_art/raw/master/gbs_covers.js&quot;&gt;&lt;/script&gt;
+  </code>
+  <p>Next, use the following snippet (with a real ISBN) in the location you want your book's thumbnail to appear.</p>
+  <code>
+    &lt;div bibkey=&quot;ISBN:123456&quot; class=&quot;gbookthumbnail&quot;&gt;&lt;/div&gt;
+  </code>
+  <p>OR, for a thumbnail that links to additional information on Google Books</p>
+  <code>
+    &lt;div bibkey=&quot;ISBN:123456&quot; class=&quot;gbookpreview&quot;&gt;&lt;/div&gt;
+  </code>
+
+  <hr />
+  <script src="gbs_covers.js"></script>
+</body>
+</html>
